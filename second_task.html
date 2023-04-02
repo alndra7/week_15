@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const n = 123;
+      const numbers = ("" + n).split("").map(Number);
+      numbers.forEach(alert);
+
+      numbers.reverse();
+
+      const total = numbers.reduce((total, n) => total + n);
+
+      const length = numbers.length;
+
+      console.log(length);
+      console.log(total);
+      console.log(numbers);
+    </script>
+  </body>
+</html>
